@@ -1,0 +1,20 @@
+package _protected;
+
+/**
+ * The derived class always has access to the protected members
+ * of the the base class (even if it was in a different package
+ * than the base class).
+ * 
+ */
+public class AlunoPos extends Aluno {
+    String orientador;
+    String programa;
+
+    public String toString() {
+        return    "Nome: " + nome + "\n"
+                + "Sobrenome: " + sobrenome + "\n"
+                + "RA: " + ra + "\n"
+                + "Programa: " + programa + "\n"
+                + "Orientador: " + orientador;
+    }
+}
